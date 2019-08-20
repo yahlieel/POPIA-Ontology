@@ -1,0 +1,608 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/yahlieel.jafta/ontologies/2019/5/popia-ontology.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/yahlieel.jafta/ontologies/2019/5/popia-ontology.owl">
+    <Prefix name="" IRI="http://www.semanticweb.org/yahlieel.jafta/ontologies/2019/5/popia-ontology.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>An ontology on the Protection of Personal Information Act (POPIA) (2013) that describes various concepts within the Act.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Access"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Accountability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Accuracy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AutomatedProcessing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Child"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChildDataSubject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetentPerson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Complain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Compliance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Condition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Confidentiality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Contract"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Correction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataSubject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataSubjectAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataSubjectRight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Deletion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Documentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InformationQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InformationTransfer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Juristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LawfulProcessing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManualProcessing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Natural"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Openness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Operator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PersonTypeValuePartition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PersonalInformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Processing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcessingActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcessingMode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcessingScope"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Profiling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResponsibleParty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RightToAccess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RightToCorrection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RightToDeletion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RightToObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RightToSubmitComplaint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Security"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpecialPersonalInformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ValuePartition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#exerciseRight"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInformation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRight"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInformationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPersonType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRightOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#objectTo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Teenager"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UWC"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Access"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#exerciseRight"/>
+            <Class IRI="#RightToAccess"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Complain"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#exerciseRight"/>
+            <Class IRI="#RightToSubmitComplaint"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Correction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#exerciseRight"/>
+            <Class IRI="#RightToCorrection"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Deletion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#exerciseRight"/>
+            <Class IRI="#RightToDeletion"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Object"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#exerciseRight"/>
+            <Class IRI="#RightToObject"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Object"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#objectTo"/>
+            <Class IRI="#Processing"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PersonTypeValuePartition"/>
+        <ObjectUnionOf>
+            <Class IRI="#Juristic"/>
+            <Class IRI="#Natural"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Access"/>
+        <Class IRI="#DataSubjectAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accountability"/>
+        <Class IRI="#Condition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accuracy"/>
+        <Class IRI="#InformationQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AutomatedProcessing"/>
+        <Class IRI="#ProcessingMode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Child"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Child"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isPersonType"/>
+            <Class IRI="#Natural"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Child"/>
+        <DataMaxCardinality cardinality="17">
+            <DataProperty IRI="#hasAge"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChildDataSubject"/>
+        <Class IRI="#Child"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChildDataSubject"/>
+        <Class IRI="#DataSubject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetentPerson"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Complain"/>
+        <Class IRI="#DataSubjectAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Compliance"/>
+        <Class IRI="#Accountability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Confidentiality"/>
+        <Class IRI="#Security"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Correction"/>
+        <Class IRI="#DataSubjectAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataSubject"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataSubject"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasInformation"/>
+            <Class IRI="#PersonalInformation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataSubject"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasRight"/>
+            <Class IRI="#DataSubjectRight"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataSubjectAction"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Deletion"/>
+        <Class IRI="#DataSubjectAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Documentation"/>
+        <Class IRI="#Openness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InformationQuality"/>
+        <Class IRI="#Condition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InformationTransfer"/>
+        <Class IRI="#ProcessingActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Juristic"/>
+        <Class IRI="#PersonTypeValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LawfulProcessing"/>
+        <Class IRI="#Processing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ManualProcessing"/>
+        <Class IRI="#ProcessingMode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Natural"/>
+        <Class IRI="#PersonTypeValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Object"/>
+        <Class IRI="#DataSubjectAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Openness"/>
+        <Class IRI="#Condition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operator"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPersonType"/>
+            <Class IRI="#PersonTypeValuePartition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PersonTypeValuePartition"/>
+        <Class IRI="#ValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PersonalInformation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isInformationOf"/>
+            <Class IRI="#DataSubject"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcessingActivity"/>
+        <Class IRI="#Processing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcessingMode"/>
+        <Class IRI="#Processing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcessingScope"/>
+        <Class IRI="#Accountability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Profiling"/>
+        <Class IRI="#AutomatedProcessing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResponsibleParty"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RightToAccess"/>
+        <Class IRI="#DataSubjectRight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RightToCorrection"/>
+        <Class IRI="#DataSubjectRight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RightToDeletion"/>
+        <Class IRI="#DataSubjectRight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RightToObject"/>
+        <Class IRI="#DataSubjectRight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RightToSubmitComplaint"/>
+        <Class IRI="#DataSubjectRight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Security"/>
+        <Class IRI="#Condition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpecialPersonalInformation"/>
+        <Class IRI="#PersonalInformation"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Accountability"/>
+        <Class IRI="#InformationQuality"/>
+        <Class IRI="#Openness"/>
+        <Class IRI="#Security"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AutomatedProcessing"/>
+        <Class IRI="#ManualProcessing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Child"/>
+        <Class IRI="#CompetentPerson"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Child"/>
+        <Class IRI="#Operator"/>
+        <Class IRI="#ResponsibleParty"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Compliance"/>
+        <Class IRI="#ProcessingScope"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Condition"/>
+        <Class IRI="#Person"/>
+        <Class IRI="#PersonalInformation"/>
+        <Class IRI="#Processing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Juristic"/>
+        <Class IRI="#Natural"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LawfulProcessing"/>
+        <Class IRI="#ProcessingActivity"/>
+        <Class IRI="#ProcessingMode"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RightToDeletion"/>
+        <Class IRI="#RightToObject"/>
+        <Class IRI="#RightToSubmitComplaint"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#ChildDataSubject"/>
+        <NamedIndividual IRI="#Teenager"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Natural"/>
+        <NamedIndividual IRI="#Teenager"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataSubject"/>
+        <NamedIndividual IRI="#UWC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Juristic"/>
+        <NamedIndividual IRI="#UWC"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Teenager"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Teenager"/>
+        <Literal>School Boy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#UWC"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#UWC"/>
+        <Literal>University of the Western Cape</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#exerciseRight"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#objectTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasInformation"/>
+        <ObjectProperty IRI="#isInformationOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasRight"/>
+        <ObjectProperty IRI="#isRightOf"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isInformationOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isPersonType"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasInformation"/>
+    </InverseFunctionalObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasRight"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isRightOf"/>
+    </AsymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#exerciseRight"/>
+        <Class IRI="#DataSubjectAction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasInformation"/>
+        <Class IRI="#DataSubject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRight"/>
+        <Class IRI="#DataSubject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInformationOf"/>
+        <Class IRI="#PersonalInformation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRightOf"/>
+        <Class IRI="#DataSubjectRight"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#objectTo"/>
+        <Class IRI="#DataSubject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#exerciseRight"/>
+        <Class IRI="#DataSubjectRight"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasInformation"/>
+        <Class IRI="#PersonalInformation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRight"/>
+        <Class IRI="#DataSubjectRight"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInformationOf"/>
+        <Class IRI="#DataSubject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPersonType"/>
+        <Class IRI="#PersonTypeValuePartition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRightOf"/>
+        <Class IRI="#DataSubject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#objectTo"/>
+        <Class IRI="#Processing"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
