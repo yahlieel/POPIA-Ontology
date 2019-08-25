@@ -47,9 +47,6 @@
         <Class IRI="#Compliance"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Condition"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Confidentiality"/>
     </Declaration>
     <Declaration>
@@ -57,6 +54,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Correction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataProcessing"/>
     </Declaration>
     <Declaration>
         <Class IRI="#DataSubject"/>
@@ -86,6 +86,9 @@
         <Class IRI="#LawfulProcessing"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Lawfulness"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ManualProcessing"/>
     </Declaration>
     <Declaration>
@@ -110,7 +113,7 @@
         <Class IRI="#PersonalInformation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Processing"/>
+        <Class IRI="#Principle"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ProcessingActivity"/>
@@ -223,7 +226,7 @@
         <Class IRI="#Object"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#objectTo"/>
-            <Class IRI="#Processing"/>
+            <Class IRI="#DataProcessing"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -239,7 +242,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Accountability"/>
-        <Class IRI="#Condition"/>
+        <Class IRI="#Principle"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Accuracy"/>
@@ -327,7 +330,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#InformationQuality"/>
-        <Class IRI="#Condition"/>
+        <Class IRI="#Principle"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#InformationTransfer"/>
@@ -339,7 +342,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LawfulProcessing"/>
-        <Class IRI="#Processing"/>
+        <Class IRI="#DataProcessing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lawfulness"/>
+        <Class IRI="#Principle"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ManualProcessing"/>
@@ -355,7 +362,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Openness"/>
-        <Class IRI="#Condition"/>
+        <Class IRI="#Principle"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Operator"/>
@@ -388,11 +395,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ProcessingActivity"/>
-        <Class IRI="#Processing"/>
+        <Class IRI="#DataProcessing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ProcessingMode"/>
-        <Class IRI="#Processing"/>
+        <Class IRI="#DataProcessing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ProcessingScope"/>
@@ -428,7 +435,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Security"/>
-        <Class IRI="#Condition"/>
+        <Class IRI="#Principle"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SpecialPersonalInformation"/>
@@ -458,10 +465,10 @@
         <Class IRI="#ProcessingScope"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#Condition"/>
+        <Class IRI="#DataProcessing"/>
         <Class IRI="#Person"/>
         <Class IRI="#PersonalInformation"/>
-        <Class IRI="#Processing"/>
+        <Class IRI="#Principle"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Juristic"/>
@@ -594,7 +601,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#objectTo"/>
-        <Class IRI="#Processing"/>
+        <Class IRI="#DataProcessing"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#hasName"/>
