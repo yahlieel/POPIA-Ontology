@@ -1,4 +1,4 @@
-This repository contains the ontology developed as part of my honors project, “[An ontology for the south african protection of personal information act]”. 
+This repository contains the ontology developed as part of my honors project, “An ontology for the south african protection of personal information act”. 
 
 The ontology provides a proof of concept semantic representation of a knowledge base for the regulations in the Protection of Personal Information Act, 2013 (POPIA) and how it affects the various role players. 
 
